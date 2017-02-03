@@ -136,7 +136,7 @@
 40071,Phoenix_Wing,Phoenix Wing,5,,,1000,200,,1,4,0x000654E2,7,2,2,4,40,1,2,{ bonus bAllStats,5; if(getrefine()>=10) bonus2 bAddRace,RC_DemiHuman,5; if(getrefine()>=10) bonus2 bAddRace,RC_Player,5; },{},{}
 40072,Katar_of_Chaos,Katar of Chaos,5,,,50,165,,1,4,0x00001000,7,2,34,4,27,1,16,{ bonus bAgi,15; bonus bStr,5; bonus bVit,10; if(getrefine()>=10) bonus2 bAddRace,RC_DemiHuman,5; if(getrefine()>=10) bonus2 bAddRace,RC_Player,5; },{},{}
 40073,Frenzic,Frenzic,5,,,50,100,,1,4,0x00008100,7,2,2,4,36,1,12,{ bonus bAspdRate,30; bonus bInt,5; bonus bLuk,10; bonus bVit,10; if(getrefine()>=10) bonus2 bAddRace,RC_DemiHuman,5; if(getrefine()>=10) bonus2 bAddRace,RC_Player,5; },{},{}
-40074,Holy_Flail,Holy Flail,5,,,50,180,,1,4,0x00010100,7,2,2,4,40,1,15,{ bonus bInt,15; bonus bLuk,10; bonus bVit,5; if(getrefine()>=10) bonus bMatkRate,20; },{},{}
+40074,Holy_Flail,Holy Flail,5,,,50,180,,1,4,0x00010100,7,2,2,4,40,1,15,{ bonus bInt,15; bonus bLuk,10; bonus bVit,5; if(getrefine()<10) bonus bMatkRate,20; if(getrefine()>=10) bonus bMatkRate,40; },{},{}
 40075,Soul_Seeker,Soul Seeker,5,,,50,145,,5,4,0x00080808,7,2,34,4,77,1,11,{ bonus bLuk,5; bonus bDex,15; bonus bVit,10; if(getrefine()>=10) bonus2 bAddRace,RC_DemiHuman,5; if(getrefine()>=10) bonus2 bAddRace,RC_Player,5; },{},{}
 40076,Staff_Of_Ages,Staff Of Ages,5,,,50,180,,1,4,0x00010204,7,2,2,4,90,1,10,{ bonus bInt,15; bonus bDex,10; if(getrefine()<10) bonus bMatkRate,20; if(getrefine()>=10) bonus bMatkRate,40; },{},{}
 40077,Reaper,Reaper,5,,,2500,250,,1,4,0x00040420,7,2,34,4,44,1,7,{ bonus bAspdRate,40; bonus bStr,30; bonus bVit,10; if(getrefine()>=10) bonus2 bAddRace,RC_DemiHuman,5; if(getrefine()>=10) bonus2 bAddRace,RC_Player,5; },{},{}
