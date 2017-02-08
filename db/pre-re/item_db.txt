@@ -26,10 +26,10 @@
 519,Milk,Milk,0,25,,30,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(27,37),0; },{},{}
 520,Leaflet_Of_Hinal,Hinalle Leaflet,0,150,,10,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(175,235),0; },{},{}
 521,Leaflet_Of_Aloe,Aloe Leaflet,0,360,,20,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(325,405),0; },{},{}
-522,Fruit_Of_Mastela,Mastela Fruit,0,8500,,30,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(400,600),0; },{},{}
+522,Fruit_Of_Mastela,Mastela Fruit,0,8500,,30,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 10,10,0; },{},{}
 523,Holy_Water,Holy Water,0,20,,30,,,,,0xFFFFFFFF,7,2,,,,,,{ sc_end SC_Curse; },{},{}
 525,Panacea,Panacea,0,500,,100,,,,,0xFFFFFFFF,7,2,,,,,,{ sc_end SC_Poison; sc_end SC_Silence; sc_end SC_Blind; sc_end SC_Confusion; sc_end SC_Curse; sc_end SC_Hallucination; },{},{}
-526,Royal_Jelly,Royal Jelly,0,7000,,150,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 15,15; sc_end SC_Poison; sc_end SC_Silence; sc_end SC_Blind; sc_end SC_Confusion; sc_end SC_Curse; sc_end SC_Hallucination; },{},{}
+526,Royal_Jelly,Royal Jelly,0,7000,,150,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 5,5; sc_end SC_Poison; sc_end SC_Silence; sc_end SC_Blind; sc_end SC_Confusion; sc_end SC_Curse; sc_end SC_Hallucination; },{},{}
 528,Monster's_Feed,Monster's Feed,0,60,,150,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(72,108),0; },{},{}
 529,Candy,Candy,0,10,,30,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(45,65),0; },{},{}
 530,Candy_Striper,Candy Cane,0,20,,40,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(105,145),0; },{},{}
@@ -111,7 +111,7 @@
 605,Anodyne,Anodyne,11,2000,,100,,,,,0xFFFFFFFF,7,2,,,,,,{ itemskill "SM_ENDURE",1; },{},{}
 606,Aloebera,Aloevera,11,1500,,100,,,,,0xFFFFFFFF,7,2,,,,,,{ itemskill "SM_SELFPROVOKE",1; },{},{}
 607,Yggdrasilberry,Yggdrasil Berry,0,5000,,300,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 100,100; },{},{}
-608,Seed_Of_Yggdrasil,Yggdrasil Seed,0,5000,,30,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 50,50; },{},{}
+608,Seed_Of_Yggdrasil,Yggdrasil Seed,0,5000,,200,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 50,50; },{},{}
 609,Amulet,Amulet,2,100,,100,,,,,0xFFFFFFFF,7,2,,,,,,{},{},{}
 610,Leaf_Of_Yggdrasil,Yggdrasil Leaf,11,4000,,100,,,,,0xFFFFFFFF,7,2,,,,,,{ itemskill "ALL_RESURRECTION",1; },{},{}
 611,Spectacles,Magnifier,11,40,,50,,,,,0xFFFFFFFF,7,2,,,,,,{ itemskill "MC_IDENTIFY",1; },{},{}
@@ -1837,7 +1837,7 @@
 4200,Megalith_Card,Megalith Card,6,20,,10,,,,,,,,64,,,,,{ if(getrefine()<6) bonus bMdef,7; },{},{}
 4201,Majoruros_Card,Majoruros Card,6,20,,10,,,,,,,,16,,,,,{ bonus2 bAddEffWhenHit,Eff_Stun,600; },{},{}
 4202,Civil_Servant_Card,Mao Guai Card,6,20,,10,,,,,,,,2,,,,,{ bonus2 bAddEle,Ele_Ghost,20; },{},{}
-4203,Mutant_Dragon_Card,Mutant Dragonoid Card,6,20,,10,,,,,,,,2,,,,,{ bonus bBaseAtk,15; bonus3 bAutoSpell,"MG_FIREBALL",3+2*(getskilllv("MG_FIREBALL")==10),50; },{},{}
+4203,Mutant_Dragon_Card,Mutant Dragonoid Card,6,20,,10,,,,,,,,2,,,,,{ bonus bBaseAtk,15; bonus3 bAutoSpell,"MG_FIREBALL",3+2* },{},{}
 4204,Mini_Demon_Card,Mini Demon Card,6,20,,10,,,,,,,,64,,,,,{ bonus2 bSubRace,RC_Brute,-20; bonus2 bExpAddRace,RC_Brute,10; },{},{}
 4205,Mimic_Card,Mimic Card,6,20,,10,,,,,,,,136,,,,,{ bonus2 bAddMonsterDropItem,603,10; },{},{}
 4206,Mystcase_Card,Myst Case Card,6,20,,10,,,,,,,,769,,,,,{ bonus2 bAddMonsterDropItem,644,30; },{},{}
