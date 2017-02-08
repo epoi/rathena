@@ -5,12 +5,12 @@
 //
 // Healing Items
 //=============================================================
-501,Red_Potion,Red Potion,0,50,,70,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(45,65),0; },{},{}
-502,Orange_Potion,Orange Potion,0,200,,100,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(105,145),0; },{},{}
-503,Yellow_Potion,Yellow Potion,0,550,,130,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(175,235),0; },{},{}
-504,White_Potion,White Potion,0,1200,,150,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(325,405),0; },{},{}
-505,Blue_Potion,Blue Potion,0,5000,,150,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal 0,rand(40,60); },{},{}
-506,Green_Potion,Green Potion,0,40,,70,,,,,0xFFFFFFFF,7,2,,,,,,{ sc_end SC_Poison; sc_end SC_Silence; sc_end SC_Blind; sc_end SC_Confusion; },{},{}
+501,Red_Potion,Red Potion,0,50,,1,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 10,0; },{},{}
+502,Orange_Potion,Orange Potion,0,200,,1,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 10,15; },{},{}
+503,Yellow_Potion,Yellow Potion,0,550,,1,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 15,20; },{},{}
+504,White_Potion,White Potion,0,1200,,1,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 25,0; },{},{}
+505,Blue_Potion,Blue Potion,0,5000,,1,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 0,25; },{},{}
+506,Green_Potion,Green Potion,0,40,,1,,,,,0xFFFFFFFF,7,2,,,,,,{ sc_end SC_Poison; sc_end SC_Silence; sc_end SC_Blind; sc_end SC_Confusion; },{},{}
 507,Red_Herb,Red Herb,0,18,,30,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(18,28),0; },{},{}
 508,Yellow_Herb,Yellow Herb,0,40,,50,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(38,58),0; },{},{}
 509,White_Herb,White Herb,0,120,,70,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(75,115),0; },{},{}
@@ -26,10 +26,10 @@
 519,Milk,Milk,0,25,,30,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(27,37),0; },{},{}
 520,Leaflet_Of_Hinal,Hinalle Leaflet,0,150,,10,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(175,235),0; },{},{}
 521,Leaflet_Of_Aloe,Aloe Leaflet,0,360,,20,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(325,405),0; },{},{}
-522,Fruit_Of_Mastela,Mastela Fruit,0,5000,,5,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 20,20; },{},{}
+522,Fruit_Of_Mastela,Mastela Fruit,0,8500,,30,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(400,600),0; },{},{}
 523,Holy_Water,Holy Water,0,20,,30,,,,,0xFFFFFFFF,7,2,,,,,,{ sc_end SC_Curse; },{},{}
 525,Panacea,Panacea,0,500,,100,,,,,0xFFFFFFFF,7,2,,,,,,{ sc_end SC_Poison; sc_end SC_Silence; sc_end SC_Blind; sc_end SC_Confusion; sc_end SC_Curse; sc_end SC_Hallucination; },{},{}
-526,Royal_Jelly,Royal Jelly,0,7000,,150,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(325,405),rand(40,60); sc_end SC_Poison; sc_end SC_Silence; sc_end SC_Blind; sc_end SC_Confusion; sc_end SC_Curse; sc_end SC_Hallucination; },{},{}
+526,Royal_Jelly,Royal Jelly,0,7000,,150,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 15,15; sc_end SC_Poison; sc_end SC_Silence; sc_end SC_Blind; sc_end SC_Confusion; sc_end SC_Curse; sc_end SC_Hallucination; },{},{}
 528,Monster's_Feed,Monster's Feed,0,60,,150,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(72,108),0; },{},{}
 529,Candy,Candy,0,10,,30,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(45,65),0; },{},{}
 530,Candy_Striper,Candy Cane,0,20,,40,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(105,145),0; },{},{}
@@ -111,7 +111,7 @@
 605,Anodyne,Anodyne,11,2000,,100,,,,,0xFFFFFFFF,7,2,,,,,,{ itemskill "SM_ENDURE",1; },{},{}
 606,Aloebera,Aloevera,11,1500,,100,,,,,0xFFFFFFFF,7,2,,,,,,{ itemskill "SM_SELFPROVOKE",1; },{},{}
 607,Yggdrasilberry,Yggdrasil Berry,0,5000,,300,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 100,100; },{},{}
-608,Seed_Of_Yggdrasil,Yggdrasil Seed,0,5000,,300,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 50,50; },{},{}
+608,Seed_Of_Yggdrasil,Yggdrasil Seed,0,5000,,30,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 50,50; },{},{}
 609,Amulet,Amulet,2,100,,100,,,,,0xFFFFFFFF,7,2,,,,,,{},{},{}
 610,Leaf_Of_Yggdrasil,Yggdrasil Leaf,11,4000,,100,,,,,0xFFFFFFFF,7,2,,,,,,{ itemskill "ALL_RESURRECTION",1; },{},{}
 611,Spectacles,Magnifier,11,40,,50,,,,,0xFFFFFFFF,7,2,,,,,,{ itemskill "MC_IDENTIFY",1; },{},{}
