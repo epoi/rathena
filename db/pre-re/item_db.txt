@@ -26,10 +26,10 @@
 519,Milk,Milk,0,25,,30,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(27,37),0; },{},{}
 520,Leaflet_Of_Hinal,Hinalle Leaflet,0,150,,10,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(175,235),0; },{},{}
 521,Leaflet_Of_Aloe,Aloe Leaflet,0,360,,20,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(325,405),0; },{},{}
-522,Fruit_Of_Mastela,Mastela Fruit,0,8500,,30,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(400,600),0; },{},{}
+522,Fruit_Of_Mastela,Mastela Fruit,0,8500,,30,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 15,15; },{},{}
 523,Holy_Water,Holy Water,0,20,,30,,,,,0xFFFFFFFF,7,2,,,,,,{ sc_end SC_Curse; },{},{}
 525,Panacea,Panacea,0,500,,100,,,,,0xFFFFFFFF,7,2,,,,,,{ sc_end SC_Poison; sc_end SC_Silence; sc_end SC_Blind; sc_end SC_Confusion; sc_end SC_Curse; sc_end SC_Hallucination; },{},{}
-526,Royal_Jelly,Royal Jelly,0,7000,,150,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 15,15; sc_end SC_Poison; sc_end SC_Silence; sc_end SC_Blind; sc_end SC_Confusion; sc_end SC_Curse; sc_end SC_Hallucination; },{},{}
+526,Royal_Jelly,Royal Jelly,0,7000,,150,,,,,0xFFFFFFFF,7,2,,,,,,{ percentheal 5,5; sc_end SC_Poison; sc_end SC_Silence; sc_end SC_Blind; sc_end SC_Confusion; sc_end SC_Curse; sc_end SC_Hallucination; },{},{}
 528,Monster's_Feed,Monster's Feed,0,60,,150,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(72,108),0; },{},{}
 529,Candy,Candy,0,10,,30,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(45,65),0; },{},{}
 530,Candy_Striper,Candy Cane,0,20,,40,,,,,0xFFFFFFFF,7,2,,,,,,{ itemheal rand(105,145),0; },{},{}
